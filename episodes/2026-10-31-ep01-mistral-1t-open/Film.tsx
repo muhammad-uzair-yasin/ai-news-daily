@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Audio, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Audio, Sequence, staticFile, useCurrentFrame } from "remotion";
 import { Shots, ShotDef, Figure, Captions, Vignette, FontStyle, ramp, eio, eout, eback, pop, clamp01, lerp, mix, rnd, blinkAt, VW, VH } from "./kit";
 import { WORDS, CHUNKS, VOICE_END, TOTAL, ENV } from "./words";
 
@@ -745,7 +745,7 @@ export const NewsFilm: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: BG0 }}>
       <FontStyle />
-      <Audio src={staticFile("projects/news1/narration.wav")} volume={1} />
+      <Sequence from={15} durationInFrames={TOTAL - 15}><Audio src={staticFile("projects/news1/narration.wav")} volume={1} /></Sequence>
       <svg width={VW} height={VH} viewBox={`0 0 ${VW} ${VH}`}>
         <Defs hue={hue} />
         <Shots f={f} kicks={KICKS} shots={SHOTS.map(s => ({

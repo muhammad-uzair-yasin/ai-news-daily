@@ -1,0 +1,21 @@
+[af_heart:anna] Here's everything that happened in AI today. I'm Anna.
+
+[am_adam:max] And I'm Max. And today starts big. OpenAI just cut its funding goal by ten billion dollars.
+
+[af_heart:anna] Wait... ten billion?
+
+[am_adam:max] Yes. They now want twenty billion, not thirty, as AI stocks slide.
+
+[af_heart:anna] Story two. Apple picked Alibaba's Qwen to power Siri in China. Testing starts November fourth.
+
+[am_adam:max] Three. OpenAI launched GPT Rosalind 6, an AI for biology. But only approved labs can use it.
+
+[af_heart:anna] Four, for developers. Kimi K2 is shutting down. You have until December to switch to K3.1.
+
+[am_adam:max] Five. Hackers are now using AI to rank which victims are worth the most money.
+
+[af_heart:anna] Scary. And six, a free tool. Presentations AI turns any webpage into slides.
+
+[am_adam:max] Which story shocked you? Tell us in the comments.
+
+[af_heart:anna] Subscribe, and we'll see you same time tomorrow.

@@ -6,3 +6,8 @@ episodes/*/render_sheet.jpg
 episodes/*/still_*.png
 *.mp4
 .DS_Store
+engine/src/build_*/
+*.mp4
+engine/node_modules
+episodes/*/qa/
+episodes/*/still_*.png

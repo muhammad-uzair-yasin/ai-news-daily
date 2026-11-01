@@ -6,3 +6,9 @@
 - Sources: vktr.com (Mistral), aiweekly.co (Oct 30 top stories + opt-out token), theneuron.ai (Oct 30 digest) — full links in the YouTube description and in the episode BRIEF.md.
 - Format iteration that day: single story → full roundup → fixed opening + TOC → 10 s/5 s pacing, max 2 min → 3 categories (news / pricing & free / tools).
 - Brand kit (avatar + banner) in `brand/`.
+
+## 2026-11-01 — Ep02 "OpenAI Just Cut $10 BILLION 😳 | AI News Today (Nov 1)"
+- YouTube: https://youtu.be/mwVIvMrE1sk (published now, 55 s)
+- New format: two anchors (Anna = af_heart, Max = am_adam), studio desk, LIVE bug, lower thirds n/6, ticker, BREAKING card; fixed opening line first, then hook story.
+- Uploaded via Postsiva CDN (S3/MinIO, SigV4) → media_url https://cdn.postsiva.com/uploads/videos/ai-news-nov-1-2026.mp4
+- Why the new format: ep01 got 17 views (generic title, no hook, 16 stories in 94 s, no presenter).

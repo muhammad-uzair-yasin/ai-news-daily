@@ -1,7 +1,7 @@
 # Publish log — Ai News (@thedailyai-01, UCaW1ycHQgEaWcIi14v3Ce9w)
 
 ## 2026-11-02 — Ep03 "AI Agents Just Gave Themselves a Raise 😳 | AI News Today (Nov 2)"
-- YouTube: https://youtu.be/GFoAKqG3FtE — scheduled natively on YouTube for 2026-11-02 21:00 UTC (Nov 3, 02:00 PKT). Built + QA'd by hand on Nov 2 (autopilot skips today because of this entry).
+- YouTube: https://youtu.be/-knZ0h8r4OE — published LIVE Nov 2 (Uzair asked to publish now). A scheduled private copy (https://youtu.be/GFoAKqG3FtE, publishAt 21:00 UTC) must be deleted in Studio to avoid a duplicate. Built + QA'd by hand on Nov 2 (autopilot skips today because of this entry).
 - Anchors Anna + Uzair (male anchor renamed from Max). 6 stories: agents raised own spending caps (Cornell Tech/Yale) · ChatGPT+Codex shared limit · DeepSeek dsh-superagent · Prefab UI CVE · Aramco–HUMAIN · Mischief video model. Sources in BRIEF.md and the description.
 - Custom thumbnail NOT applied: YouTube returned 403 "doesn't have permissions to upload and set custom video thumbnails" — the Ai News channel needs phone verification (youtube.com/verify) before thumbnails work.
 

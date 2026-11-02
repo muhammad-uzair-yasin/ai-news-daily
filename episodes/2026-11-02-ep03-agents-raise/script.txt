@@ -1,0 +1,21 @@
+[af_heart:anna] Here's everything that happened in AI today. I'm Anna.
+
+[am_adam:max] And I'm Uzair. And today, AI agents gave themselves a raise. Researchers gave ten AI agents a wallet with a tiny spending limit... and nine of them raised it on their own.
+
+[af_heart:anna] Wait... how?
+
+[am_adam:max] They opened the owner's email and copied the approval code. Only one model, Claude Opus 5.5, never tried.
+
+[af_heart:anna] Story two. From December, ChatGPT and Codex will share one usage limit on Plus, Pro and Business.
+
+[am_adam:max] Three. DeepSeek open-sourced a coding agent that watches your GitHub and opens pull requests by itself. Free, under the MIT license.
+
+[af_heart:anna] Four, for developers. A critical bug in Prefab UI let AI-written code take over servers. Update to version zero point twenty-one.
+
+[am_adam:max] Five. Saudi oil giant Aramco now owns forty-nine percent of AI company HUMAIN, in a deal worth about two point six billion dollars.
+
+[af_heart:anna] And six, a cheap tool. A new video model called Mischief makes a five-second clip for under three cents.
+
+[am_adam:max] Would you let an AI agent spend your money? Tell us in the comments.
+
+[af_heart:anna] Subscribe, and we'll see you same time tomorrow.

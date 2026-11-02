@@ -19,6 +19,9 @@ Treat them as requirements. If a rule seems to conflict with a skill or template
 6. **Uzair's own ElevenLabs cloned voice.** The agent writes the script; Uzair generates the MP3 himself and attaches it.
    *Why:* the ElevenLabs API and connector are unreachable from the agent's workspace (egress proxy blocks api.elevenlabs.io). **Never ask for or store an API key** — one key was pasted in chat on Oct 30 and must be treated as compromised.
 
+**Autopilot exception (Uzair, Nov 2 2026):** daily autopilot episodes use the Kokoro two-anchor voices (Anna = af_heart,
+Uzair = am_adam) so no human is needed — see docs/autopilot.md.
+
 ## Picture
 7. **Characters: use the 50-character cast** (`docs/characters.md`, `engine/characters/`) — a host plus topic-fitting guests.
    *Why:* Uzair (Oct 31) wanted more human-like, more animated characters than the stick figure; the stick figure is now only a fallback.

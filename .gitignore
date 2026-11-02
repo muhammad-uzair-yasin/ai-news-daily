@@ -11,3 +11,4 @@ engine/src/build_*/
 engine/node_modules
 episodes/*/qa/
 episodes/*/still_*.png
+engine/tts/models/

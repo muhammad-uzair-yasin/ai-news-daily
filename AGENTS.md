@@ -12,7 +12,10 @@ One video per day. End line of every video: *"That was today's AI news in two mi
 - **You (agent):** research + verify facts, write scripts, build the film in code, QA, publish via Postsiva MCP, keep this repo up to date.
 
 ## Current status (update this block after every video)
-- Episode 1 published Oct 31 (https://youtu.be/qEQ7-utg878).
+- **AUTOPILOT since Nov 3, 2026:** a daily scheduled task researches, builds, quality-checks and publishes one episode with no
+  human in the loop. It follows `docs/autopilot.md` exactly. Template: `episodes/2026-11-02-ep03-agents-raise/`.
+- Anchors: Anna (Kokoro af_heart) + **Uzair** (Kokoro am_adam; male anchor renamed from Max on Nov 2 — code speaker id is still `max`).
+- Episodes: ep01 Oct 31 (https://youtu.be/qEQ7-utg878), ep02 Nov 1 (https://youtu.be/mwVIvMrE1sk), ep03 Nov 2 built.
 - Episode format locked (docs/content-plan.md). Brand kit in `brand/`.
 
 ## Next actions

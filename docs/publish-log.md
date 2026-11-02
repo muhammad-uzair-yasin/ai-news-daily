@@ -1,5 +1,10 @@
 # Publish log — Ai News (@thedailyai-01, UCaW1ycHQgEaWcIi14v3Ce9w)
 
+## 2026-11-02 — Ep03 "AI Agents Just Gave Themselves a Raise 😳 | AI News Today (Nov 2)"
+- YouTube: https://youtu.be/GFoAKqG3FtE — scheduled natively on YouTube for 2026-11-02 21:00 UTC (Nov 3, 02:00 PKT). Built + QA'd by hand on Nov 2 (autopilot skips today because of this entry).
+- Anchors Anna + Uzair (male anchor renamed from Max). 6 stories: agents raised own spending caps (Cornell Tech/Yale) · ChatGPT+Codex shared limit · DeepSeek dsh-superagent · Prefab UI CVE · Aramco–HUMAIN · Mischief video model. Sources in BRIEF.md and the description.
+- Custom thumbnail NOT applied: YouTube returned 403 "doesn't have permissions to upload and set custom video thumbnails" — the Ai News channel needs phone verification (youtube.com/verify) before thumbnails work.
+
 ## 2026-10-31 — Ep 01: "Everything That Happened in AI Today — Oct 31 (16 Stories in 2 Minutes)"
 - YouTube: https://youtu.be/qEQ7-utg878 (1:34) — first video on the channel.
 - Lead: Mistral Large 4 open weights (1T params, 1M context). Also: trojanized Claude Code VS Code extension in Cursor's marketplace (fix 2.1.314), Claude API request size 32→128 MB, Canada C$1.6B stake in Cohere, Amazon ~$80B loan facility for AI, shared AI-crawler opt-out token, Reddit traffic loss to AI Mode, Google Suncatcher, Tesla Optimus reservations; pricing: Mistral API $0.70/M input, Codex limits doubled, Anthropic Max/Ultra rename; tools: ElevenLabs SFX v3, OpenAI agent on iMessage, Meta AI pet + stylist apps.

@@ -15,7 +15,8 @@ One video per day. End line of every video: *"That was today's AI news in two mi
 - **AUTOPILOT since Nov 3, 2026:** a daily scheduled task researches, builds, quality-checks and publishes one episode with no
   human in the loop. It follows `docs/autopilot.md` exactly. Template: `episodes/2026-11-02-ep03-agents-raise/` (latest autopilot build: `episodes/2026-11-03-ep04-anthropic-17b/`).
 - Anchors: Anna (Kokoro af_heart) + **Uzair** (Kokoro am_adam; male anchor renamed from Max on Nov 2 — code speaker id is still `max`).
-- Episodes: ep01 Oct 31 (https://youtu.be/qEQ7-utg878), ep02 Nov 1 (https://youtu.be/mwVIvMrE1sk), ep03 Nov 2 (https://youtu.be/-knZ0h8r4OE, live), ep04 Nov 3 (https://youtu.be/6dXRoUtipw4, autopilot, scheduled 21:00 UTC).
+- Episodes: ep01 Oct 31 (https://youtu.be/qEQ7-utg878), ep02 Nov 1 (https://youtu.be/mwVIvMrE1sk), ep03 Nov 2 (https://youtu.be/-knZ0h8r4OE, live), ep04 Nov 3 (https://youtu.be/4ziseOPTV7g, autopilot, live).
+- Publishing rule (Uzair, Nov 3): publish each episode IMMEDIATELY the same day — never schedule for later.
 - Episode format locked (docs/content-plan.md). Brand kit in `brand/`.
 
 ## Next actions

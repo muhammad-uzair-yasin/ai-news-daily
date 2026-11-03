@@ -1,7 +1,7 @@
 # Publish log — Ai News (@thedailyai-01, UCaW1ycHQgEaWcIi14v3Ce9w)
 
 ## 2026-11-03 — Ep04 "Anthropic Made $17 BILLION in 3 Months 😳 | AI News Today (Nov 3)" (autopilot)
-- YouTube: https://youtu.be/6dXRoUtipw4 — scheduled natively on YouTube, publishAt 2026-11-03 21:00 UTC (Nov 4, 02:00 PKT). 90.6 s.
+- YouTube: https://youtu.be/4ziseOPTV7g — published LIVE Nov 3 ~10:25 UTC (15:25 PKT) after Uzair said news must go out the same day, never scheduled. The earlier scheduled private copy https://youtu.be/6dXRoUtipw4 (publishAt 21:00 UTC) must be deleted in YouTube Studio to avoid a duplicate. 90.6 s.
 - 7 stories: Anthropic amended S-1 (~$17B Q3 revenue) · Marvell–Lumentum $115B · China full-lifecycle AI safety rules · MCPhantom (deprecated MCP servers) · Antigravity free plan loses Claude · Beacon · Clayzo. Sources in BRIEF.md and the description.
 - QA: AUTO OK; independent review FIX → fixed → PASS. Custom thumbnail still refused (403 — channel needs phone verification).
 

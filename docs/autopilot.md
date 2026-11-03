@@ -82,9 +82,8 @@ Print the word list with frames (`grep -o` the WORDS array) — the cue frames i
 3. `YOUTUBE_POST_VIDEO` via `multi_execute_tool`: channel_id above, title `<Lead hook> 😳 | AI News Today (<Mon D>)` (≤ 100
    chars), description per docs/content-plan.md (emoji lines per story + channel lines + 📰 SOURCES with one link per story +
    `#ainews #ai #technews #shorts`), media_id, thumbnail_url, made_for_kids false, visibility PUBLIC,
-   `schedule_with: "youtube"`, `scheduled_time` = today 21:00 UTC on weekdays / 17:00 UTC on Sat–Sun (if that time has
-   already passed, omit scheduled_time to publish now).
-   If YouTube returns a rate-limit/quota error, retry once with `schedule_with: "postsiva"`.
+   and NO scheduled_time — **publish immediately** (Uzair, Nov 3 2026: "it's everyday news, publish it the same day, don't
+   schedule it for tomorrow"). If YouTube returns a rate-limit/quota error, retry once.
 4. If YouTube refuses the custom thumbnail (403 "permissions to upload and set custom video thumbnails"), the video still goes out — mention it in the final message (the channel needs phone verification).
 5. No cross-posting (Uzair hasn't asked for it on this channel's autopilot).
 
@@ -95,6 +94,6 @@ Print the word list with frames (`grep -o` the WORDS array) — the cue frames i
 - `rm -rf /tmp/lrn`.
 
 ## 9. Final message (this is what Uzair reads)
-1. The YouTube link and publish time (PKT).
+1. The YouTube link and the time it went live (PKT).
 2. The digest: "Top picks" (5–7 bullets) + "Free and deals" quick list, each with its source link.
 3. QA result in one line. Any story cut for lack of verification.

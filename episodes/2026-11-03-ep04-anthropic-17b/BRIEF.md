@@ -24,4 +24,4 @@ Sources:
 - https://www.producthunt.com/products/clayzo
 
 QA: verify.py AUTO OK (offset 0.54 s, corr 0.97, 2716/2716 frames, 90.6 s). Independent review round 1: FIX (story-1 monitor showed intro card at 12–14.5 s; cover subtitle over faces) → fixed, re-rendered; round 2: PASS.
-YouTube: https://youtu.be/6dXRoUtipw4 — scheduled natively, publishAt 2026-11-03 21:00 UTC (Nov 4, 02:00 PKT). Custom thumbnail refused (403, channel needs phone verification).
+YouTube: https://youtu.be/4ziseOPTV7g — published live Nov 3 (Uzair: publish same day). Scheduled private duplicate https://youtu.be/6dXRoUtipw4 to be deleted in Studio. Custom thumbnail refused (403, channel needs phone verification).

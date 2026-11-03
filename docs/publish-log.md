@@ -1,5 +1,10 @@
 # Publish log — Ai News (@thedailyai-01, UCaW1ycHQgEaWcIi14v3Ce9w)
 
+## 2026-11-03 — Ep04 "Anthropic Made $17 BILLION in 3 Months 😳 | AI News Today (Nov 3)" (autopilot)
+- YouTube: https://youtu.be/6dXRoUtipw4 — scheduled natively on YouTube, publishAt 2026-11-03 21:00 UTC (Nov 4, 02:00 PKT). 90.6 s.
+- 7 stories: Anthropic amended S-1 (~$17B Q3 revenue) · Marvell–Lumentum $115B · China full-lifecycle AI safety rules · MCPhantom (deprecated MCP servers) · Antigravity free plan loses Claude · Beacon · Clayzo. Sources in BRIEF.md and the description.
+- QA: AUTO OK; independent review FIX → fixed → PASS. Custom thumbnail still refused (403 — channel needs phone verification).
+
 ## 2026-11-02 — Ep03 "AI Agents Just Gave Themselves a Raise 😳 | AI News Today (Nov 2)"
 - YouTube: https://youtu.be/-knZ0h8r4OE — published LIVE Nov 2 (Uzair asked to publish now). A scheduled private copy (https://youtu.be/GFoAKqG3FtE, publishAt 21:00 UTC) must be deleted in Studio to avoid a duplicate. Built + QA'd by hand on Nov 2 (autopilot skips today because of this entry).
 - Anchors Anna + Uzair (male anchor renamed from Max). 6 stories: agents raised own spending caps (Cornell Tech/Yale) · ChatGPT+Codex shared limit · DeepSeek dsh-superagent · Prefab UI CVE · Aramco–HUMAIN · Mischief video model. Sources in BRIEF.md and the description.

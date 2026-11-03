@@ -1,0 +1,21 @@
+[af_heart:anna] Here's everything that happened in AI today. I'm Anna.
+
+[am_adam:max] And I'm Uzair. And today, Anthropic opened its books. Seventeen billion dollars in revenue... in just three months.
+
+[af_heart:anna] Wait... seventeen billion?
+
+[am_adam:max] Yes. Up almost half from the quarter before. It still lost twenty-three billion, mostly from accounting charges. It's all in its updated IPO filing.
+
+[af_heart:anna] Story two. Chipmaker Marvell is buying laser maker Lumentum for one hundred fifteen billion dollars, all in stock. It's being called the biggest merger ever between two public tech companies.
+
+[am_adam:max] Three. China says it will set safety rules for the whole life of an AI system... from building it to launching it. And it will watch what AI does to jobs.
+
+[af_heart:anna] Four, for developers. Researchers found coding agents installing old, abandoned MCP servers straight from memory. Those packages have over seventeen million downloads... and one has a bug that runs an attacker's commands.
+
+[am_adam:max] Five, on pricing. Google's Antigravity free plan just lost Claude. Free users now get Gemini Flash only. Claude stays on the paid plans.
+
+[af_heart:anna] Six and seven, free tools. Beacon gives your coding agents one shared memory, and it topped Product Hunt. And Clayzo lets your coding agent make animations... for free.
+
+[am_adam:max] Seventeen billion in three months... is AI a bubble, or the real deal? Tell us in the comments.
+
+[af_heart:anna] Subscribe, and we'll see you same time tomorrow.

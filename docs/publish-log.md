@@ -1,5 +1,12 @@
 # Publish log — Ai News (@thedailyai-01, UCaW1ycHQgEaWcIi14v3Ce9w)
 
+## 2026-11-04 — Ep05 "Free app does your boring work while you sleep + today's AI news | AI News 4 Nov" — NEW FORMAT
+- YouTube: https://youtube.com/shorts/PvZeEo0IOyE — published LIVE Nov 4 ~16:50 PKT. 37.6 s. First "headlines + free tool" episode (format chosen by Uzair after the retention research).
+- Free tool: **Sentient OS** (free, open source AGPL-3.0, Mac) — https://sentient-os.ai · https://github.com/Sentient-OS-Labs/sentient-os
+- Headlines: OpenAI GPT-6 Astra designed a device in under a week (The Decoder) · Revolut −90% AI coding cost by self-hosting GLM (The Register) · Apple opens Siri AI to every developer (Apple Developer) · Postman silently installed plugins into Claude Code/Codex (GitHub issue #14370).
+- First comment with the tool link posted (Uzair to pin it). QA: AUTO OK (offset 0.50 s, corr 0.98).
+- Nov 4 autopilot run was paused (no old-format episode posted that day).
+
 ## 2026-11-03 — Ep04 "Anthropic Made $17 BILLION in 3 Months 😳 | AI News Today (Nov 3)" (autopilot)
 - YouTube: https://youtu.be/4ziseOPTV7g — published LIVE Nov 3 ~10:25 UTC (15:25 PKT) after Uzair said news must go out the same day, never scheduled. The earlier scheduled private copy (6dXRoUtipw4) was deleted by Uzair in Studio. 90.6 s.
 - 7 stories: Anthropic amended S-1 (~$17B Q3 revenue) · Marvell–Lumentum $115B · China full-lifecycle AI safety rules · MCPhantom (deprecated MCP servers) · Antigravity free plan loses Claude · Beacon · Clayzo. Sources in BRIEF.md and the description.

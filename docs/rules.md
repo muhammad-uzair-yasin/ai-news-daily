@@ -11,7 +11,7 @@ Treat them as requirements. If a rule seems to conflict with a skill or template
    For titles: the title IS the hook, and the first spoken line matches it.
 2. **Real, specific knowledge — verified.** Every number/claim is checked against a primary or reputable source before recording. Sources go in the episode `BRIEF.md` (and for news, in the YouTube description).
    *Why:* Uzair: "we need good scripts with hook stoppers and real knowledge." Credibility is the brand.
-3. **Length:** ~1 minute is the target, **not a hard cap** — a video runs longer when the content needs it. News roundups are capped at ~2 minutes. (YouTube Shorts allow up to 3 minutes.)
+3. **Length:** news Shorts are 30–40 s in the "headlines + free tool" format (Nov 4 2026). Other channels: ~1 minute target.
 4. **Short spoken sentences, `...` for pauses** (ElevenLabs honours them), numbers written as words in the script so the voice reads them naturally.
 5. **End with the channel's own subscribe line** (see docs/network.md table).
 

@@ -1,4 +1,22 @@
-# Ai News — episode format (locked Oct 31 2026)
+# Ai News — episode format (locked Nov 4 2026 — "HEADLINES + FREE TOOL")
+
+**Current format.** Every episode: a hook about today's FREE AI TOOL'S BENEFIT to the viewer → today's AI news as **4 one-line
+headlines** → the free tool, unlocked and shown in 3–4 plain steps → "Tomorrow, same time." 30–40 s, one voice (Byte),
+cream "Distilled" card look with company logos. Reference episode: ep05, Nov 4 2026 (https://youtube.com/shorts/PvZeEo0IOyE).
+Template + exact procedure: `engine/templates/headlines-tool/` and `docs/autopilot.md`.
+
+## Why (Uzair's decisions, Nov 4 2026)
+- The 7-story / 90 s / two-anchor roundup got 29% stayed-to-watch and 30–200 views. Research (`docs/retention-research.md`):
+  the swipe happens in ~1 s, long roundups have no winners, the hook must promise something specific to the viewer.
+- Uzair: "it should start with today's AI news and a free AI tool"; "only tell the news title, no need of depth".
+- The free tool is the payoff: promised on frame 0 (🎁 "unlocks at 0:xx"), shown last.
+- No branded intro, no anchors desk, no TOC; the hook screen itself says what you'll get.
+
+## Title template
+`<Free tool's benefit> + today's AI news | AI News <D Mon>`
+
+---
+## (History) Old format, Oct 31 – Nov 3 2026 — retired Nov 4
 
 ## What it is
 A **daily roundup of everything that happened in AI** in the last ~24 hours, in under 2 minutes.

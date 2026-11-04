@@ -1,99 +1,117 @@
-# Ai News autopilot — one episode a day, no human in the loop
+# Ai News autopilot — "HEADLINES + FREE TOOL" (locked Nov 4 2026)
 
-Set up by Uzair on Nov 2, 2026: "it should not only tell me news, it should automatically create videos on it and post it to the
-AI News channel, no human needed, but make sure the video is good, covers everything and is quality checked."
+Set up by Uzair: a scheduled task starts a fresh agent session every day; that agent follows THIS file top to bottom, builds
+one Short in exactly the format of **ep05 (Nov 4 2026, https://youtube.com/shorts/PvZeEo0IOyE)** and publishes it. No human in the loop.
+Why this format: the old 7-story / 90 s / two-anchor roundup got 29% "stayed to watch" and 30–200 views. Research
+(`docs/retention-research.md`) showed every high-view AI short is short, has a viewer-benefit hook, and a real payoff. Uzair
+chose: open with the free tool's benefit, give today's news as headlines only, then show the free tool at the end.
 
-A scheduled task starts a fresh agent session every day and that agent follows THIS file from top to bottom.
-Template episode: `episodes/2026-11-02-ep03-agents-raise/` (copy it, change the content, keep the format).
+## The format (do not change it without Uzair)
+| Time | Beat | Spoken |
+|---|---|---|
+| 0–5 s | HOOK screen: "TODAY IN AI · <DATE>" badge, big line = the free tool's BENEFIT (never a company), red serif punch, 🎁 "Today's free tool · unlocks at 0:xx" tile (visible on frame 0 = the thumbnail), then a "Today's AI news · 4 headlines · first" tile | "This free app <benefit>... <punch>. First... today's AI news." |
+| ~5–20 s | 4 HEADLINE cards, one line each, ~3.5 s each, logo + one punch OR one chip, progress dots ending in 🎁 | one short sentence per headline, ≤ 12 words, no explanations |
+| ~20 s | 🎁 bursts open | "Now, the free one." |
+| ~21–34 s | FREE TOOL card: name big, 3–4 plain steps that appear as spoken (last one green = the payoff), red punch ("Free · open source"), site, "LINK IN PINNED COMMENT" | "<Name>. <what it does in 3–4 short steps>. <Free/price line>. Link in the pinned comment." |
+| last 2 s | hard cut, Byte waves | "Tomorrow, same time." |
 
-## 0. Setup (fresh session, ~5 min)
-1. Repo: `/home/claude/ai-news-daily` (github.com/muhammad-uzair-yasin/ai-news-daily). If it is missing, attach it with the
-   `add_repo` tool (owner `muhammad-uzair-yasin`, repo `ai-news-daily`, access `push`) and clone it there.
-2. `bash engine/tts/setup.sh` — installs the Kokoro voices (downloads ~350 MB from GitHub the first time).
-3. `cd engine && npm ci` (render.sh also does this when node_modules is missing).
-4. Free disk check: `df -h /`. Renders need ~3 GB. Remotion leaves 240 MB bundles in TMPDIR, so ALWAYS render with
-   `TMPDIR=/tmp/lrn` and delete `/tmp/lrn` afterwards.
-5. Idempotency: if `docs/publish-log.md` already has an entry for today's date (PKT), stop and report "already published".
+Total **30–40 s**, ~90 words, one voice (Byte = Kokoro `am_adam`, speaker id `byte`). Cream "Distilled" look, logos, stopwatch
+ring with a 🎁 marker at the unlock point. The template (`engine/templates/headlines-tool/`) already does all of this —
+the agent only writes `script.txt` and `episode.ts`.
 
-## 1. Research (the old "Daily AI News Digest", ~20 min)
-- Get the current date/time. Cover what launched or changed in the last ~24 hours; do not repeat stories already in
-  `docs/publish-log.md`.
-- Run many separate WebSearch calls (mode "extended" for fresh news), one per area: model launches (OpenAI, Anthropic, Google,
-  Meta, xAI, Mistral, DeepSeek, Qwen, open source) · AI tools/products · free tools & free tiers · deals · pricing/plan changes ·
-  developer & agentic AI (MCP, SDKs, coding agents) · creator tools · business/funding/regulation · research/security.
-- WebFetch the ORIGINAL source for every story you will use. Cross-check numbers with a second source for the lead story.
-- Never invent facts, prices or links. A story you can't verify is cut.
+## 0. Setup (~5 min)
+1. Repo `/home/claude/ai-news-daily` (github.com/muhammad-uzair-yasin/ai-news-daily). If missing: `add_repo` (owner
+   `muhammad-uzair-yasin`, repo `ai-news-daily`, access `push`), clone there. `git pull`.
+2. `bash engine/tts/setup.sh` (Kokoro voices) · `cd engine && npm ci`.
+3. `df -h /` (renders need ~3 GB). Always render with `TMPDIR=/tmp/lrn`; delete `/tmp/lrn` at the end.
+4. Idempotency: if `docs/publish-log.md` already has an entry for today's date (PKT), stop and report "already published".
 
-## 2. Pick the stories
-- 6 to 8 stories, at least one from each section: AI NEWS · PRICING & FREE · AI TOOLS (docs/content-plan.md).
-- Story 1 (the lead) = the most surprising, visual, easy-to-explain one. It becomes the hook, the title and the cover word.
-- Total spoken length 60–110 s (hard cap ~2 min).
+## 1. Research (~15 min)
+Run several WebSearch calls (mode "extended"): "AI news today <Month D YYYY>", "everything that happened in AI today <date>",
+"free AI tool launched this week <Month YYYY>", "Product Hunt AI <date>". Good digests to WebFetch: theneuron.ai daily digest,
+aiweekly.co/ai-news-today, thetoolnerd.com new-tools posts, producthunt.com daily leaderboard.
 
-## 3. Script (`episodes/<YYYY-MM-DD>-epNN-<slug>/script.txt`)
-Two anchors, Kokoro voices: `[af_heart:anna]` = Anna, `[am_adam:max]` = **Uzair** (the male anchor is called Uzair on screen and
-in speech; the speaker id stays `max` for the code).
+**Pick 4 headlines** (3 on a thin day) from the last ~24 h, not already in `docs/publish-log.md`:
+- Prefer concrete and visual: a named product/model doing something, a price or free tier change, a big number, a security
+  warning people can act on. Avoid funding rounds, executive hires and vague "AI will…" stories.
+- Mix: at most 2 from the same company. Order: most surprising first.
+- WebFetch the ORIGINAL source for each one. Never invent facts, numbers or links; cut any story you cannot verify.
+
+**Pick 1 free tool** (this is the payoff — spend time on it):
+- Must be usable today, really free (free forever / open source / generous free tier — say which), launched or updated recently.
+- WebFetch its own site AND confirm the free part (pricing page, GitHub license). Record the exact URL.
+- It must do one thing a normal person wants, describable in 3–4 plain steps ("reads your…, drafts…, you just approve").
+- Prefer tools for everyday work (email, docs, notes, video, images, coding) over niche dev infrastructure.
+- Never repeat a tool that is in `docs/publish-log.md`.
+
+## 2. Script (`episodes/<YYYY-MM-DD>-epNN-<slug>/script.txt`)
+One paragraph per beat, every paragraph tagged `[am_adam:byte]`. Copy the shape of ep05's script exactly:
 ```
-[af_heart:anna] Here's everything that happened in AI today. I'm Anna.
-[am_adam:max] And I'm Uzair. And today, <lead hook in one sentence>. <the key fact>.
-[af_heart:anna] <short reaction / question, e.g. "Wait... how?">
-[am_adam:max] <one-line explanation>.
-[af_heart:anna] Story two. <1–2 lines>
-[am_adam:max] Three. <1–2 lines>
-... alternate anchors, "Four, for developers." style intros ...
-[am_adam:max] <one question for the comments>
-[af_heart:anna] Subscribe, and we'll see you same time tomorrow.
+[am_adam:byte] This free app <benefit>... <punch>. First... today's AI news.
+[am_adam:byte] <headline 1, ≤ 12 words>.
+[am_adam:byte] <headline 2>.
+[am_adam:byte] <headline 3>.
+[am_adam:byte] And <headline 4>. <optional 2–3 word action, e.g. "Check your settings.">
+[am_adam:byte] Now, the free one. <Tool name>. <step 1>... <step 2>... and <step 3>. <payoff step>. <Free line>. Link in the pinned comment.
+[am_adam:byte] Tomorrow, same time.
 ```
-Rules: short sentences, `...` for pauses, numbers written as words, no claims beyond the sources.
+Rules: short words, numbers written as words ("ninety percent"), no claims beyond the sources, vary the wording every day
+(do not reuse yesterday's hook verb or punch) — YouTube's inauthentic-content policy punishes identical-sounding uploads.
 
-## 4. Voice + timing
+## 3. Voice + timing
 ```
-python3 engine/tts/narrate.py episodes/<ep>/script.txt episodes/<ep> --speed 1.1     # narration.mp3 + sents.json
-python3 engine/tools/words_spk.py episodes/<ep>                                       # words.ts (WORDS, CHUNKS, TOTAL, ENV, SPK)
+python3 engine/tts/narrate.py episodes/<ep>/script.txt episodes/<ep> --speed 1.1
+python3 engine/tools/words_spk.py episodes/<ep>
 ```
-Print the word list with frames (`grep -o` the WORDS array) — the cue frames in Film.tsx come from it.
+Check the printed duration: 30–40 s. Over 40 s → shorten the tool steps or the headlines and re-run.
 
-## 5. Build the film (copy the template)
-- Copy `Film.tsx` + `entry.tsx` from the template episode. In entry.tsx change the composition id (e.g. `NewsFour`).
-- In Film.tsx change: the `F` cue table (exact frames of the spoken words from words.ts), `STORIES` (n/total, tag, colour,
-  title ≤ 40 chars), `TICKER`, the dates (`NOV 2 · 2026` in Chrome, IdleLogo date), the `Breaking` card (lead story, kinetic
-  number), one graphic component per story (`G1…Gn`, drawn in the 940×640 monitor panel: props, morphs, counters, chips,
-  cards — every element appears on the word that names it), `G7Comments` question, `graphicAt`, the `SHOTS` list (anchor
-  close-up on the story intro → monitor push-in on the graphic), `PUNCH`, `Cover word`, `<Narration slug="newsNN">`.
-- Keep: studio, desk, anchors (male anchor `name: "Uzair"`), lower third, ticker, outro subscribe card, captions.
-- SFX: only one soft subscribe click (Uzair's rule).
-- Check every `F.<name>` used is defined (a quick python regex over Film.tsx) before rendering.
+## 4. Build (copy, don't code)
+```
+EP=episodes/<ep>
+cp engine/templates/headlines-tool/Film.tsx engine/templates/headlines-tool/entry.tsx $EP/
+cp engine/templates/headlines-tool/episode.example.ts $EP/episode.ts   # then edit $EP/episode.ts
+```
+Edit only `episode.ts`: date, hook line/punch, the 4 heads (text, logo or badge, punch or chip, cue words, source), the tool
+(name, platform, site, 3–4 steps with cue words, punch). Every `cue*` must be a word that is actually spoken, in order — the
+template finds the frames itself and throws an error naming the missing word if one is wrong. Do NOT edit Film.tsx.
+Logos: `ls engine/public/logos`; if missing, `ls engine/node_modules/@lobehub/icons-static-svg/icons | grep -i <name>`, copy
+`<name>-color.svg` (or `<name>.svg`) to `engine/public/logos/<name>.svg`, replace `fill="currentColor"` with `fill="#111118"`
+and `height="1em" width="1em"` with `height="200" width="200"`; commit it. No logo → use `badge: "NAME"`.
+Text limits (so nothing overflows): hook line ≤ 40 chars, hook punch ≤ 18, headline `h` ≤ 60, punch ≤ 18, chip ≤ 28,
+tool step ≤ 36, tool punch ≤ 22.
 
-## 6. Quality gate — nothing gets posted unless all of this passes
-1. Stills: `TMPDIR=/tmp/lrn bash engine/render.sh episodes/<ep> --still <frame>` for the Breaking card and every story graphic
-   (when its last element has appeared). Look at each: no text overflowing the panel/cards, nothing overlapping, numbers right,
-   lower third correct. Fix and re-check.
-2. Full render: `TMPDIR=/tmp/lrn bash engine/render.sh episodes/<ep>` (~45 min for 75 s on 2 CPUs).
-3. `python3 engine/qa/verify.py episodes/<ep>` must print `AUTO OK` (audio offset ≈0.54 s, corr > 0.6, frame count exact).
-4. Independent review: spawn a separate subagent that has NOT seen the build. Give it the 4 sheets `episodes/<ep>/qa/passA_*.jpg`
-   and `passB_*.jpg` and ask for problems with timestamps (clipped/overlapping text, empty monitor > 2 s while talking, graphic
-   not matching the words, captions wrong, wrong numbers vs script) and a PASS/FIX verdict.
-5. On FIX: correct Film.tsx, re-render only if needed, repeat 3–4. Max 2 fix rounds. If it still fails, DO NOT POST — commit the
-   work and report what is wrong.
+## 5. Quality gate — nothing is posted unless all of this passes
+1. Stills: `TMPDIR=/tmp/lrn bash engine/render.sh $EP --still <f>` for frame 0, each headline after its punch, and the tool card
+   after its last step. Look at each: nothing overflowing a card, nothing over the captions (captions start at y=1235), logos visible.
+2. Full render IN THE FOREGROUND (background jobs get killed): `TMPDIR=/tmp/lrn bash engine/render.sh $EP` with a 10-minute
+   command timeout (~6 min for 35 s on 2 CPUs).
+3. `python3 engine/qa/verify.py $EP` must print `AUTO OK`.
+4. Independent review: spawn a subagent that has not seen the build; give it `$EP/qa/passA_*.jpg`, `passB_*.jpg` and
+   script.txt; ask for problems with timestamps (overflow, overlap, wrong words/numbers vs script, captions covered) and PASS/FIX.
+5. On FIX: correct episode.ts (or the script), re-render, repeat 3–4. Max 2 rounds. Still failing → DO NOT POST; commit and report.
 
-## 7. Publish (Postsiva, YouTube channel `UCaW1ycHQgEaWcIi14v3Ce9w`)
-1. Thumbnail: `ffmpeg -ss <time of Breaking card> -i render.mp4 -frames:v 1 thumbnail.jpg`.
-2. Upload: Postsiva `get_upload_link` (media_type video, platform youtube) → run its curl command for render.mp4 (→ media_id)
-   and for thumbnail.jpg with `media_type=image` (→ public_url).
-3. `YOUTUBE_POST_VIDEO` via `multi_execute_tool`: channel_id above, title `<Lead hook> 😳 | AI News Today (<Mon D>)` (≤ 100
-   chars), description per docs/content-plan.md (emoji lines per story + channel lines + 📰 SOURCES with one link per story +
-   `#ainews #ai #technews #shorts`), media_id, thumbnail_url, made_for_kids false, visibility PUBLIC,
-   and NO scheduled_time — **publish immediately** (Uzair, Nov 3 2026: "it's everyday news, publish it the same day, don't
-   schedule it for tomorrow"). If YouTube returns a rate-limit/quota error, retry once.
-4. If YouTube refuses the custom thumbnail (403 "permissions to upload and set custom video thumbnails"), the video still goes out — mention it in the final message (the channel needs phone verification).
-5. No cross-posting (Uzair hasn't asked for it on this channel's autopilot).
+## 6. Publish (Postsiva, YouTube channel `UCaW1ycHQgEaWcIi14v3Ce9w`)
+1. Postsiva `get_upload_link` (media_type video, platform youtube, file_path = render.mp4) → run its curl → media_id.
+2. `YOUTUBE_POST_VIDEO` via `multi_execute_tool`: channel_id above, made_for_kids false, visibility PUBLIC, **no scheduled_time**
+   (publish immediately — Uzair's rule), title and description below. On a rate-limit error retry once.
+   - **Title:** `<Tool benefit, ≤ 55 chars> + today's AI news | AI News <D Mon>` — e.g.
+     `Free app does your boring work while you sleep + today's AI news | AI News 4 Nov`.
+   - **Description:** first line 🎁 the free tool + what it does + its URL (and GitHub if open source); then "📰 Today's AI news
+     (<date>):" with the 4 headlines numbered; "⏱ Today's AI news + one free tool. Every day."; "Voice and visuals made with AI.";
+     the three "More from me" channel lines; "📰 SOURCES" with one link per headline + the tool link; 3 hashtags
+     (`#AINews #<main company> #FreeAITools`).
+3. `YOUTUBE_FIRST_COMMENT` on the new video id: "🎁 Today's free tool — <Name> (<free/open source/platform>): <URL>" + one
+   question for the comments. (Pinning must be done by Uzair in the YouTube app — say so in the final message.)
+4. No cross-posting on this channel.
 
-## 8. Save
-- Episode folder: script.txt, sents.json, words.ts, Film.tsx, entry.tsx, narration.mp3, thumbnail.jpg, contact_sheet.jpg
-  (= qa/passA_1.jpg), BRIEF.md (stories + every source link + QA numbers + YouTube link). Never commit render.mp4.
-- Add the entry to `docs/publish-log.md` and update the status block in `AGENTS.md`. Commit and push.
-- `rm -rf /tmp/lrn`.
+## 7. Save
+- Episode folder: script.txt, sents.json, words.ts, episode.ts, Film.tsx, entry.tsx, narration.mp3, BRIEF.md (headlines + tool
+  + every source link + QA result + YouTube link). Never commit render.mp4.
+- Add the entry at the TOP of `docs/publish-log.md` (date, title, link, the 4 headlines, the tool + URL) and update the status
+  block in `AGENTS.md`. Commit and push. `rm -rf /tmp/lrn`.
 
-## 9. Final message (this is what Uzair reads)
-1. The YouTube link and the time it went live (PKT).
-2. The digest: "Top picks" (5–7 bullets) + "Free and deals" quick list, each with its source link.
-3. QA result in one line. Any story cut for lack of verification.
+## 8. Final message (Uzair reads this on his phone)
+1. YouTube link + time it went live (PKT).
+2. Today's free tool (name, one line, link) and the 4 headlines (one line each, with source links).
+3. QA result in one line; any story cut for lack of verification; reminder to pin the first comment.
+If nothing was posted, say so at the top with the reason.

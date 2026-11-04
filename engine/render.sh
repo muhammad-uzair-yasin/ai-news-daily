@@ -27,6 +27,7 @@ if [[ -d "$EP/extra" ]]; then for f in "$EP"/extra/*.mp3; do ffmpeg -y -v error 
 B="src/build_$SLUG"
 rm -rf "$B" && mkdir -p "$B"
 cp src/*.tsx "$EP/Film.tsx" "$EP/entry.tsx" "$EP/words.ts" "$B/"
+[[ -f "$EP/episode.ts" ]] && cp "$EP/episode.ts" "$B/"
 
 # Chrome: Remotion downloads its own on a normal machine. In the Claude cloud workspace the download is
 # blocked, so point it at the pre-installed Playwright chromium.

@@ -4,20 +4,22 @@ You are continuing the production of **Ai News** (@thedailyai-01, channel_id `UC
 Read this file, then `docs/rules.md`, then `docs/content-plan.md`. Everything you need is in this repo.
 
 ## The job
-**Daily AI news roundup** — everything that happened in AI today, in under 2 minutes, in 3 sections: AI news · pricing & free · AI tools.
-One video per day. End line of every video: *"That was today's AI news in two minutes... subscribe, same time tomorrow."*
+**Daily "today's AI news + one free AI tool" Short**, 30–40 s: free-tool hook → 4 one-line headlines → the free tool shown.
+Format locked Nov 4 2026 (docs/content-plan.md); end line: "Tomorrow, same time."
 
 ## Who does what
 - **Uzair (owner):** approves, records the narration in his ElevenLabs cloned voice from your script, uploads finished MP4s to Postsiva when asked (the agent workspace can't reach the upload server), gives direction.
 - **You (agent):** research + verify facts, write scripts, build the film in code, QA, publish via Postsiva MCP, keep this repo up to date.
 
 ## Current status (update this block after every video)
-- **AUTOPILOT since Nov 3, 2026:** a daily scheduled task researches, builds, quality-checks and publishes one episode with no
-  human in the loop. It follows `docs/autopilot.md` exactly. Template: `episodes/2026-11-02-ep03-agents-raise/` (latest autopilot build: `episodes/2026-11-03-ep04-anthropic-17b/`).
-- Anchors: Anna (Kokoro af_heart) + **Uzair** (Kokoro am_adam; male anchor renamed from Max on Nov 2 — code speaker id is still `max`).
-- Episodes: ep01 Oct 31 (https://youtu.be/qEQ7-utg878), ep02 Nov 1 (https://youtu.be/mwVIvMrE1sk), ep03 Nov 2 (https://youtu.be/-knZ0h8r4OE, live), ep04 Nov 3 (https://youtu.be/4ziseOPTV7g, autopilot, live).
-- Publishing rule (Uzair, Nov 3): publish each episode IMMEDIATELY the same day — never schedule for later.
-- Episode format locked (docs/content-plan.md). Brand kit in `brand/`.
+- **AUTOPILOT (re-enabled Nov 4 2026, new format):** the daily scheduled task "AI News Autopilot" follows `docs/autopilot.md`
+  exactly: copies `engine/templates/headlines-tool/` and writes only `script.txt` + `episode.ts`. Reference episode:
+  `episodes/2026-11-04-ep05-astra-hardware/` (hand-built; its Film.tsx predates the template — use the template).
+- Voice: one narrator, **Byte** (Kokoro am_adam, speaker id `byte`), shown as the mascot bottom-right. Anna/Uzair anchors retired.
+- Episodes: ep01 Oct 31 (https://youtu.be/qEQ7-utg878), ep02 Nov 1 (https://youtu.be/mwVIvMrE1sk), ep03 Nov 2 (https://youtu.be/-knZ0h8r4OE),
+  ep04 Nov 3 (https://youtu.be/4ziseOPTV7g) — old roundup format; **ep05 Nov 4 (https://youtube.com/shorts/PvZeEo0IOyE) — first in the new format.**
+- Publishing rule (Uzair, Nov 3): publish IMMEDIATELY the same day — never schedule for later.
+- Logos: engine/public/logos (+ 994 more in engine/node_modules/@lobehub/icons-static-svg/icons).
 
 ## Next actions
 1. Each day: read the latest Daily AI News Digest (scheduled research task, 10:57 & 21:57 PKT) + fresh searches; group stories into the 3 sections; write the script with the fixed opening line; send to Uzair.

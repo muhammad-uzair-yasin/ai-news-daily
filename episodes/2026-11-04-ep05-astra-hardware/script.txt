@@ -1,0 +1,11 @@
+[am_adam:byte] OpenAI's AI just designed a real gadget... circuit board and all... in under a week. And stay to the end. There's a free app that does your boring work while you sleep.
+
+[am_adam:byte] Two OpenAI engineers asked GPT-6 Astra to build a device for talking to Codex. Astra did the case, the circuit board, the firmware, and the interface... in under a week. A factory then built real prototypes in under a month.
+
+[am_adam:byte] But... it took several revisions. Astra kept missing manufacturing limits, like tolerances.
+
+[am_adam:byte] Three more things happened today. Revolut cut its AI coding bill ninety percent by self-hosting. Apple opened Siri AI to every developer. And Postman quietly installed itself into Claude Code and Codex. Check your settings.
+
+[am_adam:byte] Now the free one. Sentient OS. Open source, runs on your Mac. Every night it reads your mail, notes and files... then drafts replies and fills forms, and waits for your okay. Free for life. Link in the pinned comment.
+
+[am_adam:byte] Tomorrow, same time.

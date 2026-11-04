@@ -12,3 +12,6 @@ engine/node_modules
 episodes/*/qa/
 episodes/*/still_*.png
 engine/tts/models/
+episodes/*/_v_*/narration.mp3
+episodes/*/_v_*/words.ts
+episodes/*/_v_*/still_*.png

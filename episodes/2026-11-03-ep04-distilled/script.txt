@@ -1,21 +1,25 @@
-[af_heart:anna] Here's everything that happened in AI today. I'm Anna.
+[am_adam:byte] Anthropic just made seventeen billion dollars... in three months.
 
-[am_adam:max] And I'm Uzair. And today, Anthropic opened its books. Seventeen billion dollars in revenue... in just three months.
+[am_adam:byte] Hundreds of AI stories dropped today.
 
-[af_heart:anna] Wait... seventeen billion?
+[am_adam:byte] I read them all.
 
-[am_adam:max] Yes. Up almost half from the quarter before. It still lost twenty-three billion, mostly from accounting charges. It's all in its updated IPO filing.
+[am_adam:byte] These are the seven that matter.
 
-[af_heart:anna] Story two. Chipmaker Marvell is buying laser maker Lumentum for one hundred fifteen billion dollars, all in stock. It's being called the biggest merger ever between two public tech companies.
+[am_adam:byte] One. Anthropic opened its books. Seventeen billion in revenue... in a single quarter. That's up almost half from the quarter before. It still lost twenty-three billion, mostly from accounting charges. It's all in its updated IPO filing.
 
-[am_adam:max] Three. China says it will set safety rules for the whole life of an AI system... from building it to launching it. And it will watch what AI does to jobs.
+[am_adam:byte] Two. Chipmaker Marvell is buying laser maker Lumentum for one hundred fifteen billion dollars... all in stock. The biggest merger ever between two public tech companies.
 
-[af_heart:anna] Four, for developers. Researchers found coding agents installing old, abandoned MCP servers straight from memory. Those packages have over seventeen million downloads... and one has a bug that runs an attacker's commands.
+[am_adam:byte] Three. China says it will set safety rules for the whole life of an AI system... from building it to launching it. And it will watch what AI does to jobs.
 
-[am_adam:max] Five, on pricing. Google's Antigravity free plan just lost Claude. Free users now get Gemini Flash only. Claude stays on the paid plans.
+[am_adam:byte] Four, for developers. Coding agents are installing old, abandoned MCP servers straight from memory. Those packages have over seventeen million downloads... and one has a bug that runs an attacker's commands.
 
-[af_heart:anna] Six and seven, free tools. Beacon gives your coding agents one shared memory, and it topped Product Hunt. And Clayzo lets your coding agent make animations... for free.
+[am_adam:byte] Five, on pricing. Google's Antigravity free plan just lost Claude. Free users now get Gemini Flash only. Claude stays on the paid plans.
 
-[am_adam:max] Seventeen billion in three months... is AI a bubble, or the real deal? Tell us in the comments.
+[am_adam:byte] Six. Beacon gives your coding agents one shared memory... and it topped Product Hunt.
 
-[af_heart:anna] Subscribe, and we'll see you same time tomorrow.
+[am_adam:byte] Seven. Clayzo lets your coding agent make animations... for free.
+
+[am_adam:byte] Seventeen billion in three months... is AI a bubble, or the real deal? Tell me in the comments.
+
+[am_adam:byte] Subscribe. Same time tomorrow.

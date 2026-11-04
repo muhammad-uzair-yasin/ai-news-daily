@@ -1,212 +1,236 @@
 [
 [
-"Here's everything that happened in AI today.",
+"Anthropic just made seventeen billion dollars...",
 0.08,
-2.272,
-"anna"
+2.662,
+"byte"
 ],
 [
-"I'm Anna.",
-2.572,
-3.149,
-"anna"
+"in three months.",
+3.082,
+4.037,
+"byte"
 ],
 [
-"And I'm Uzair.",
-3.749,
-4.705,
-"max"
+"Hundreds of AI stories dropped today.",
+4.587,
+6.657,
+"byte"
 ],
 [
-"And today, Anthropic opened its books.",
-5.005,
-6.993,
-"max"
+"I read them all.",
+7.207,
+8.175,
+"byte"
 ],
 [
-"Seventeen billion dollars in revenue...",
-7.293,
-9.317,
-"max"
+"These are the seven that matter.",
+8.725,
+10.198,
+"byte"
 ],
 [
-"in just three months.",
-9.737,
-10.756,
-"max"
+"One.",
+10.748,
+11.209,
+"byte"
 ],
 [
-"Wait...",
-11.356,
-11.855,
-"anna"
+"Anthropic opened its books.",
+11.509,
+13.084,
+"byte"
 ],
 [
-"seventeen billion?",
-12.275,
-13.26,
-"anna"
+"Seventeen billion in revenue...",
+13.384,
+15.104,
+"byte"
 ],
 [
-"Yes.",
-13.86,
-14.374,
-"max"
+"in a single quarter.",
+15.524,
+16.608,
+"byte"
 ],
 [
-"Up almost half from the quarter before.",
-14.674,
-16.525,
-"max"
+"That's up almost half from the quarter before.",
+16.908,
+18.978,
+"byte"
 ],
 [
 "It still lost twenty-three billion, mostly from accounting charges.",
-16.825,
-20.404,
-"max"
+19.278,
+22.858,
+"byte"
 ],
 [
 "It's all in its updated IPO filing.",
-20.704,
-22.826,
-"max"
+23.158,
+25.279,
+"byte"
 ],
 [
-"Story two.",
-23.426,
-24.153,
-"anna"
+"Two.",
+25.829,
+26.334,
+"byte"
 ],
 [
-"Chipmaker Marvell is buying laser maker Lumentum for one hundred fifteen billion dollars, all in stock.",
-24.453,
-30.668,
-"anna"
+"Chipmaker Marvell is buying laser maker Lumentum for one hundred fifteen billion dollars...",
+26.634,
+31.67,
+"byte"
 ],
 [
-"It's being called the biggest merger ever between two public tech companies.",
-30.968,
-34.843,
-"anna"
+"all in stock.",
+32.09,
+32.953,
+"byte"
+],
+[
+"The biggest merger ever between two public tech companies.",
+33.253,
+36.279,
+"byte"
 ],
 [
 "Three.",
-35.443,
-35.984,
-"max"
+36.829,
+37.369,
+"byte"
 ],
 [
 "China says it will set safety rules for the whole life of an AI system...",
-36.284,
-40.174,
-"max"
+37.669,
+41.622,
+"byte"
 ],
 [
 "from building it to launching it.",
-40.594,
-42.09,
-"max"
+42.042,
+43.563,
+"byte"
 ],
 [
 "And it will watch what AI does to jobs.",
-42.39,
-44.476,
-"max"
+43.863,
+45.974,
+"byte"
 ],
 [
 "Four, for developers.",
-45.076,
-46.345,
-"anna"
+46.524,
+47.762,
+"byte"
 ],
 [
-"Researchers found coding agents installing old, abandoned MCP servers straight from memory.",
-46.645,
-52.31,
-"anna"
+"Coding agents are installing old, abandoned MCP servers straight from memory.",
+48.062,
+52.65,
+"byte"
 ],
 [
 "Those packages have over seventeen million downloads...",
-52.61,
-55.498,
-"anna"
+52.95,
+55.811,
+"byte"
 ],
 [
 "and one has a bug that runs an attacker's commands.",
-55.918,
-58.453,
-"anna"
+56.231,
+58.755,
+"byte"
 ],
 [
 "Five, on pricing.",
-59.053,
-60.217,
-"max"
+59.305,
+60.507,
+"byte"
 ],
 [
 "Google's Antigravity free plan just lost Claude.",
-60.517,
-63.177,
-"max"
+60.807,
+63.467,
+"byte"
 ],
 [
 "Free users now get Gemini Flash only.",
-63.477,
-65.732,
-"max"
+63.767,
+66.098,
+"byte"
 ],
 [
 "Claude stays on the paid plans.",
-66.032,
-67.692,
-"max"
+66.398,
+68.121,
+"byte"
 ],
 [
-"Six and seven, free tools.",
-68.292,
-69.814,
-"anna"
+"Six.",
+68.671,
+69.197,
+"byte"
 ],
 [
-"Beacon gives your coding agents one shared memory, and it topped Product Hunt.",
-70.114,
-74.256,
-"anna"
+"Beacon gives your coding agents one shared memory...",
+69.497,
+72.067,
+"byte"
 ],
 [
-"And Clayzo lets your coding agent make animations...",
-74.556,
-77.478,
-"anna"
+"and it topped Product Hunt.",
+72.487,
+73.811,
+"byte"
+],
+[
+"Seven.",
+74.361,
+74.963,
+"byte"
+],
+[
+"Clayzo lets your coding agent make animations...",
+75.263,
+77.823,
+"byte"
 ],
 [
 "for free.",
-77.898,
-78.524,
-"anna"
+78.243,
+78.964,
+"byte"
 ],
 [
 "Seventeen billion in three months...",
-79.124,
-80.904,
-"max"
+79.514,
+81.337,
+"byte"
 ],
 [
 "is AI a bubble, or the real deal?",
-81.324,
-83.194,
-"max"
+81.757,
+83.627,
+"byte"
 ],
 [
-"Tell us in the comments.",
-83.494,
-84.664,
-"max"
+"Tell me in the comments.",
+83.927,
+85.041,
+"byte"
 ],
 [
-"Subscribe, and we'll see you same time tomorrow.",
-85.264,
-87.684,
-"anna"
+"Subscribe.",
+85.591,
+86.424,
+"byte"
+],
+[
+"Same time tomorrow.",
+86.724,
+87.977,
+"byte"
 ]
 ]
